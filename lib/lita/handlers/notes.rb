@@ -3,8 +3,8 @@ module Lita
     class Notes < Handler
       config :notes, type: Hash, default: Hash.new
 
-      route(%r{^notes$}, :topics, command: true, help: { "topics": "List available notes"})
-      route(%r{^notes\s+(\w+)}, :note, command: true, help: { "topics": "List available notes"})
+      route(%r{^notes$}, :topics, command: true, help: { "notes": "List available notes"})
+      route(%r{^notes\s+(\w+)}, :note, command: true, help: { "notes TOPIC": "Show notes for TOPIC"})
 
       def topics(response)
         if config.notes.empty?
