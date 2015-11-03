@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-notes"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Scott Macfarlane"]
   spec.email         = ["macfarlane.scott@gmail.com"]
   spec.description   = "Handler for generic notes"

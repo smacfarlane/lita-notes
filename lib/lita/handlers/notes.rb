@@ -3,7 +3,7 @@ module Lita
     class Notes < Handler
       config :notes, type: Hash, default: Hash.new
 
-      route(%r{^notes}, :topics, command: true, help: { "topics": "List available notes"})
+      route(%r{^notes$}, :topics, command: true, help: { "topics": "List available notes"})
       route(%r{^notes\s+(\w+)}, :note, command: true, help: { "topics": "List available notes"})
 
       def topics(response)
